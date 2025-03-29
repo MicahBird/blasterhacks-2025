@@ -14,9 +14,18 @@ func parse(line []string) int {
 
 	switch line[0] {
 	case "cd":
-		err := os.Chdir(line[1])
-		if err != nil {
-			return 0
+		homedir, err := os.UserHomeDir()
+
+		if len(line) == 1 {
+			err = os.Chdir(homedir)
+			if err != nil {
+				return 0
+			}
+		} else {
+			err = os.Chdir(line[1])
+			if err != nil {
+				return 0
+			}
 		}
 	case "pwd":
 		getwd, err := os.Getwd()
@@ -46,6 +55,31 @@ func parse(line []string) int {
 	case "clear":
 		screen.Clear()
 		screen.MoveTopLeft()
+	case "send_sock":
+		var sendLine string
+
+		for i, s := range line {
+			if i != 0 {
+				sendLine += s
+				sendLine += " "
+			}
+		}
+
+		sendLine = strings.TrimSpace(sendLine)
+		wsock(sendLine)
+
+		// traps for regular shells and unwanted programs
+	case "bash":
+	case "zsh":
+	case "sh":
+	case "fish":
+		// --
 	}
+
 	return 0
+}
+
+func splitLine(line string) []string {
+	// TODO: argparse?
+	return strings.Split(line, " ")
 }

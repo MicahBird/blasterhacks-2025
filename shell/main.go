@@ -49,7 +49,7 @@ func main() {
 		}
 
 		line := scanner()
-		lines := strings.Split(line, " ")
+		lines := splitLine(line)
 		parse(lines)
 		//print()
 	}
