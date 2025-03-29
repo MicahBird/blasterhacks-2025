@@ -45,6 +45,7 @@ func parse(line []string) int {
 		}
 	case "clear":
 		screen.Clear()
+		screen.MoveTopLeft()
 	}
 	return 0
 }
