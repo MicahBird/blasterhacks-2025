@@ -4,13 +4,24 @@ import (
 	"bufio"
 	"log"
 	"os"
+	"os/signal"
+	"strings"
+	"syscall"
 )
 
 func main() {
+	c := make(chan os.Signal)
+	signal.Notify(c, os.Interrupt, syscall.SIGTERM)
+	go func() {
+		<-c
+	}()
+
 	for {
 		print("# ")
 		line := scanner()
-		print(line)
+		lines := strings.Split(line, " ")
+		parse(lines)
+		//print()
 	}
 }
 
