@@ -79,6 +79,7 @@ func scanner() string {
 	line, err := reader.ReadString('\n')
 	if err != nil {
 		log.Fatal(err)
+		os.Remove(socketPath)
 	}
 
 	return line

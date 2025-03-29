@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/aynakeya/go-mpv"
+	"github.com/inancgumus/screen"
 	"log"
 )
 
@@ -31,7 +32,7 @@ func play_ad(ad_type AdType) {
 	//log.Println("audio-client-name", m.SetOptionString("audio-client-name", "AynaMpvCore"))
 	//log.Println("volume", m.SetOption("volume", mpv.FORMAT_INT64, 100))
 	log.Println("terminal", m.SetOptionString("terminal", "no"))
-	log.Println("vo", m.SetOptionString("vo", "caca"))
+	log.Println("vo", m.SetOptionString("vo", "tct"))
 	//log.Println("set ao", m.SetPropertyString("audio-device", "pulse/alsa_output.pci-0000_75_00.6.analog-stereo"))
 
 	//log.Println("video", m.SetOption("video", mpv.FORMAT_STRING, "no"))
@@ -75,4 +76,6 @@ func play_ad(ad_type AdType) {
 
 	}
 	m.TerminateDestroy()
+	screen.Clear()
+	screen.MoveTopLeft()
 }

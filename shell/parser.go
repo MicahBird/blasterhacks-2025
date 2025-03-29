@@ -90,6 +90,8 @@ func parse(line []string) int {
 		cmd.Stdout = os.Stdout
 		cmd.Stderr = os.Stderr
 		cmd.Stdin = os.Stdin
+		// Play ad:
+		play_ad(PROGRAMMER)
 		cmd.Run()
 
 	}
