@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"fmt"
+	"github.com/charmbracelet/lipgloss"
 	"log"
 	"os"
 	"os/signal"
@@ -10,6 +11,8 @@ import (
 	"strings"
 	"syscall"
 )
+
+var style = lipgloss.NewStyle().Foreground(lipgloss.Color("#D500D5"))
 
 func main() {
 	c := make(chan os.Signal)
@@ -40,9 +43,9 @@ func main() {
 
 		if strings.Contains(getwd, homedir) {
 			getwd = strings.Replace(getwd, homedir, "", 1)
-			fmt.Printf("[%s@%s:~%s]$ ", current.Name, hostname, getwd)
+			fmt.Print(style.Render(fmt.Sprintf("[%s@%s:~%s]$ ", current.Name, hostname, getwd)))
 		} else {
-			fmt.Printf("[%s@%s:%s]$ ", current.Name, hostname, getwd)
+			fmt.Print(style.Render(fmt.Sprintf("[%s@%s:%s]$ ", current.Name, hostname, getwd)))
 		}
 
 		line := scanner()
