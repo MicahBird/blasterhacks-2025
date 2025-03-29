@@ -12,6 +12,8 @@ import (
 	"syscall"
 )
 
+const socketPath = "/tmp/unix.sock"
+
 var style = lipgloss.NewStyle().Foreground(lipgloss.Color("#D500D5"))
 
 func main() {
@@ -21,37 +23,53 @@ func main() {
 		<-c
 	}()
 
+	sockRead := make(chan []byte, 3)
+	go func() {
+		for {
+			readData := rsock()
+			if readData != nil {
+				sockRead <- readData
+				fmt.Println("\n" + string(<-sockRead))
+				prompt()
+			}
+		}
+	}()
+
 	for {
-		getwd, err := os.Getwd()
-		if err != nil {
-			return
-		}
-		homedir, err := os.UserHomeDir()
-		if err != nil {
-			return
-		}
-
-		current, err := user.Current()
-		if err != nil {
-			return
-		}
-
-		hostname, err := os.Hostname()
-		if err != nil {
-			return
-		}
-
-		if strings.Contains(getwd, homedir) {
-			getwd = strings.Replace(getwd, homedir, "", 1)
-			fmt.Print(style.Render(fmt.Sprintf("[%s@%s:~%s]$ ", current.Name, hostname, getwd)))
-		} else {
-			fmt.Print(style.Render(fmt.Sprintf("[%s@%s:%s]$ ", current.Name, hostname, getwd)))
-		}
+		prompt()
 
 		line := scanner()
 		lines := splitLine(line)
 		parse(lines)
 		//print()
+	}
+}
+
+func prompt() {
+	getwd, err := os.Getwd()
+	if err != nil {
+		return
+	}
+	homedir, err := os.UserHomeDir()
+	if err != nil {
+		return
+	}
+
+	current, err := user.Current()
+	if err != nil {
+		return
+	}
+
+	hostname, err := os.Hostname()
+	if err != nil {
+		return
+	}
+
+	if strings.Contains(getwd, homedir) {
+		getwd = strings.Replace(getwd, homedir, "", 1)
+		fmt.Print(style.Render(fmt.Sprintf("[%s@%s:~%s]$ ", current.Name, hostname, getwd)))
+	} else {
+		fmt.Print(style.Render(fmt.Sprintf("[%s@%s:%s]$ ", current.Name, hostname, getwd)))
 	}
 }
 

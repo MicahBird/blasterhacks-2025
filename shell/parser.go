@@ -1,8 +1,10 @@
 package main
 
 import (
+	"fmt"
 	"github.com/inancgumus/screen"
 	"os"
+	"os/exec"
 	"strings"
 )
 
@@ -34,6 +36,10 @@ func parse(line []string) int {
 		}
 		println(getwd)
 	case "exit":
+		err := os.Remove(socketPath)
+		if err != nil {
+			os.Exit(55)
+		}
 		os.Exit(0)
 	case "ls":
 		if len(line) == 1 {
@@ -70,10 +76,22 @@ func parse(line []string) int {
 
 		// traps for regular shells and unwanted programs
 	case "bash":
+		fallthrough
 	case "zsh":
+		fallthrough
 	case "sh":
+		fallthrough
 	case "fish":
+		fmt.Println("External shell programs are disallowed")
 		// --
+
+	default:
+		cmd := exec.Command(line[0], line[1:]...)
+		cmd.Stdout = os.Stdout
+		cmd.Stderr = os.Stderr
+		cmd.Stdin = os.Stdin
+		cmd.Run()
+
 	}
 
 	return 0
