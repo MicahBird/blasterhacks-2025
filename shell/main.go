@@ -35,12 +35,14 @@ func main() {
 		}
 	}()
 
+	inputCount := 0
+
 	for {
 		prompt()
-
 		line := scanner()
 		lines := splitLine(line)
-		parse(lines)
+		inputCount += 1
+		parse(lines, inputCount)
 		//print()
 	}
 }

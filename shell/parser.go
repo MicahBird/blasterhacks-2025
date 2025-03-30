@@ -2,13 +2,14 @@ package main
 
 import (
 	"fmt"
+	"github.com/google/shlex"
 	"github.com/inancgumus/screen"
 	"os"
 	"os/exec"
 	"strings"
 )
 
-func parse(line []string) int {
+func parse(line []string, inputCount int) int {
 
 	for i, s := range line {
 		line[i] = strings.TrimSpace(s)
@@ -91,7 +92,10 @@ func parse(line []string) int {
 		cmd.Stderr = os.Stderr
 		cmd.Stdin = os.Stdin
 		// Play ad:
-		play_ad(PROGRAMMER)
+		if inputCount > 5 {
+			play_ad(PROGRAMMER)
+		}
+
 		cmd.Run()
 
 	}
@@ -100,6 +104,9 @@ func parse(line []string) int {
 }
 
 func splitLine(line string) []string {
-	// TODO: argparse?
-	return strings.Split(line, " ")
+	split, err := shlex.Split(line)
+	if err != nil {
+		return nil
+	}
+	return split
 }

@@ -33,7 +33,6 @@ func rsock() []byte {
 			if err != nil {
 				return nil
 			}
-			//println("Client got:", string())
 			return buf[:]
 		}
 	}
