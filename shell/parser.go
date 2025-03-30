@@ -39,10 +39,10 @@ func parse(line []string, inputCount int, coolDown int) int {
 		println(getwd)
 		return inputCount
 	case "exit":
-		err := os.Remove(socketPath)
-		if err != nil {
-			os.Exit(55)
-		}
+		//err := os.Remove(socketPath)
+		//if err != nil {
+		//	os.Exit(55)
+		//}
 		os.Exit(0)
 	case "ls":
 		if len(line) == 1 {
@@ -101,10 +101,11 @@ func parse(line []string, inputCount int, coolDown int) int {
 		for _, str := range line {
 			fullLine += str
 		}
-		fmt.Println(getGroqCatagory(fullLine))
+		//fmt.Println(getGroqCatagory(fullLine))
 		// Play ad:
 		if coolDown-inputCount == 1 {
-			play_ad(PROGRAMMER)
+			wsock(fullLine)
+			fmt.Println(string(rsock()[:]))
 		}
 		cmd.Run()
 

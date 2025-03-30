@@ -15,6 +15,7 @@ func rsock() []byte {
 	// applies to the dial operation; it does not apply to the connection once
 	// it has been established.
 
+	socketPath := "/tmp/s.sock"
 	c, err := net.Listen("unix", socketPath)
 	if err != nil {
 		log.Println(err)
@@ -49,6 +50,7 @@ func wsock(text string) {
 	defer cancel()
 
 	d.LocalAddr = nil // if you have a local addr, add it here
+	socketPath := "/tmp/r.sock"
 	raddr := net.UnixAddr{Name: socketPath, Net: "unix"}
 	conn, err := d.DialContext(ctx, "unix", raddr.String())
 	if err != nil {

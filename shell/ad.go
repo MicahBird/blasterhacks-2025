@@ -5,13 +5,8 @@ import (
 	"github.com/aynakeya/go-mpv"
 	"github.com/inancgumus/screen"
 	"log"
-)
-
-type AdType string
-
-const (
-	PROGRAMMER = AdType("programmer")
-	SOY_DEV    = AdType("SOY_DEV")
+	"math/rand"
+	"time"
 )
 
 func eventListener(m *mpv.Mpv) chan *mpv.Event {
@@ -25,8 +20,40 @@ func eventListener(m *mpv.Mpv) chan *mpv.Event {
 	return c
 }
 
-func play_ad(ad_type AdType) {
-	localfile := "/home/user/" + ad_type + ".mp4"
+func play_ad(category string) {
+	// If the category present is not in the following array pick a random catagory
+	categories := [13]string{
+		"pythondev", "javadev", "jsdev", "cppdev", "rustdev", "csharpdev",
+		"phpdev", "golangdev", "swiftdev", "kotlindev", "sysdev",
+		"webdev", "securitydev", // Note: Trailing comma is optional but idiomatic
+	} // Array size is 13
+
+	// Check if the provided category exists in the array
+	found := false
+	for _, validCategory := range categories {
+		if category == validCategory {
+			found = true
+			break // Found it, no need to check further
+		}
+	}
+	// If the category was not found in the list
+	if !found {
+		//fmt.Printf("Category '%s' not recognized. Selecting a random category.\n", category)
+
+		// Seed the random number generator.
+		// In a real application, this should ideally be done once, e.g., in main() or init().
+		// Using a local source to avoid interfering with the global rand state.
+		source := rand.NewSource(time.Now().UnixNano())
+		localRand := rand.New(source)
+
+		// Pick a random index from 0 to len(categories)-1
+		randomIndex := localRand.Intn(len(categories))
+
+		// Assign the randomly selected category
+		category = categories[randomIndex]
+	}
+	// Send to r.sock recive on s.sock
+	localfile := "http://localhost:8080/" + category
 	m := mpv.Create()
 	c := eventListener(m)
 	//log.Println("audio-client-name", m.SetOptionString("audio-client-name", "AynaMpvCore"))

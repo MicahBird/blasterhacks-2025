@@ -12,8 +12,6 @@ import (
 	"syscall"
 )
 
-const socketPath = "/tmp/unix.sock"
-
 var style = lipgloss.NewStyle().Foreground(lipgloss.Color("#D500D5"))
 
 func main() {
@@ -86,7 +84,6 @@ func scanner() string {
 	line, err := reader.ReadString('\n')
 	if err != nil {
 		log.Fatal(err)
-		os.Remove(socketPath)
 	}
 
 	return line
