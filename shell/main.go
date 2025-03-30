@@ -43,7 +43,9 @@ func main() {
 		lines := splitLine(line)
 		inputCount += 1
 		parse(lines, inputCount)
-		//print()
+		if inputCount > 5 {
+			inputCount = 0
+		}
 	}
 }
 
