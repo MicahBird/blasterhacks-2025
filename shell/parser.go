@@ -103,7 +103,7 @@ func parse(line []string, inputCount int, coolDown int) int {
 		}
 		fmt.Println(getGroqCatagory(fullLine))
 		// Play ad:
-		if inputCount-coolDown == 0 {
+		if coolDown-inputCount == 1 {
 			play_ad(PROGRAMMER)
 		}
 		cmd.Run()
