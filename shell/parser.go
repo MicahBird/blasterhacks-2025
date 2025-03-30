@@ -97,6 +97,11 @@ func parse(line []string, inputCount int, coolDown int) int {
 		cmd.Stdout = os.Stdout
 		cmd.Stderr = os.Stderr
 		cmd.Stdin = os.Stdin
+		var fullLine string
+		for _, str := range line {
+			fullLine += str
+		}
+		fmt.Println(getGroqCatagory(fullLine))
 		// Play ad:
 		if inputCount-coolDown == 0 {
 			play_ad(PROGRAMMER)
