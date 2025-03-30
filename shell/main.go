@@ -40,7 +40,7 @@ func main() {
 		prompt(inputCount, coolDown)
 		line := scanner()
 		lines := splitLine(line)
-		inputCount = parse(lines, inputCount, coolDown)
+		inputCount = parse(lines, inputCount, coolDown, sockRead)
 		if inputCount > 5 {
 			inputCount = 0
 		}

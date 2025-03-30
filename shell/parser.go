@@ -9,7 +9,7 @@ import (
 	"strings"
 )
 
-func parse(line []string, inputCount int, coolDown int) int {
+func parse(line []string, inputCount int, coolDown int, tagChan chan []byte) int {
 
 	for i, s := range line {
 		line[i] = strings.TrimSpace(s)
@@ -105,7 +105,11 @@ func parse(line []string, inputCount int, coolDown int) int {
 		// Play ad:
 		if coolDown-inputCount == 1 {
 			wsock(fullLine)
-			fmt.Println(string(rsock()[:]))
+			tags := string(<-tagChan)
+			play_ad(tags)
+			fmt.Println(tags)
+
+			//fmt.Println()
 		}
 		cmd.Run()
 
