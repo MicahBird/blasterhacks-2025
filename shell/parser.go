@@ -108,6 +108,7 @@ func parse(line []string, inputCount int, coolDown int, tagChan chan []byte) int
 			wsock(fullLine)
 			tags := strings.TrimSpace(string(bytes.Trim(<-tagChan, "\x00")))
 			play_ad(tags)
+			inputCount = 0
 			fmt.Println(tags)
 
 			//fmt.Println()

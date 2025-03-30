@@ -40,6 +40,9 @@ func main() {
 		prompt(inputCount, coolDown)
 		line := scanner()
 		lines := splitLine(line)
+		if len(lines) == 0 {
+			continue
+		}
 		inputCount = parse(lines, inputCount, coolDown, sockRead)
 		if inputCount > 5 {
 			inputCount = 0
@@ -70,11 +73,11 @@ func prompt(inputCount int, coolDown int) {
 	remaningCommands := coolDown - inputCount
 	if strings.Contains(getwd, homedir) {
 		getwd = strings.Replace(getwd, homedir, "", 1)
-		fmt.Print(style.Render(fmt.Sprintf(`╭─[%s@%s:~%s]
-╰──────────── (%d Commands Remaning)$ `, current.Name, hostname, getwd, remaningCommands)))
+		fmt.Println(style.Render(fmt.Sprintf(`╭─[%s@%s:~%s]`, current.Name, hostname, getwd)))
+		fmt.Print(style.Render(fmt.Sprintf(`╰──────────── (%d Commands Remaning)$ `, remaningCommands)))
 	} else {
-		fmt.Print(style.Render(fmt.Sprintf(`╭─[%s@%s:~%s]
-╰─ (%d Commands Remaning)$ `, current.Name, hostname, getwd, remaningCommands)))
+		fmt.Println(style.Render(fmt.Sprintf(`╭─[%s@%s:%s]`, current.Name, hostname, getwd)))
+		fmt.Print(style.Render(fmt.Sprintf(`╰──────────── (%d Commands Remaning)$ `, remaningCommands)))
 	}
 }
 
