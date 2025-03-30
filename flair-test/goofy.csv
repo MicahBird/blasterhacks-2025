@@ -1,0 +1,1341 @@
+ python -m pip install --user -U pip, pythondev
+ java -jar /path/to/jarfile.jar, javadev
+" node -e 'console.log(""Hello World!"");'", jsdev
+ g++ -std=c++11 -o output main.cpp, cppdev
+ rustc -o output main.rs, rustdev
+ csc -target:exe -out:output.exe main.cs, csharpdev
+ php -f /path/to/script.php, phpdev
+ go build -o output main.go, golangdev
+ swiftc -o output main.swift, swiftdev
+ kotlinc -include-runtime -o output.jar main.kt, kotlindev
+ lsof -i :80, sysdev
+ curl -I http://example.com, webdev
+ nmap -sS 192.168.1.0/24, securitydev
+ python -m pip freeze > requirements.txt, pythondev
+ javac -cp /path/to/library.jar Main.java, javadev
+ npm ls -g --depth=0, jsdev
+ cmake -DCMAKE_BUILD_TYPE=Release .., cppdev
+ cargo build --release, rustdev
+ mcs -target:exe -out:output.exe main.cs, csharpdev
+ php -S localhost:8000, phpdev
+ go test -v, golangdev
+ swift test, swiftdev
+ kotlinc -script script.kts, kotlindev
+ systemctl status systemd, sysdev
+ wget --limit-rate=1m http://example.com/file, webdev
+ ssh-keygen -t rsa -b 4096, securitydev
+ python -m unittest discover, pythondev
+java -agentlib:jdwp=transport=dt_socket, javadev
+ node -v, jsdev
+ gcc -S main.c -o main.asm, cppdev
+ rustdoc --test, rustdev
+ csc -define:DEBUG -out:debug.exe main.cs, csharpdev
+ phpDocumentor, phpdev
+ go fmt, golangdev
+ swift package init --type executable, swiftdev
+ kotlinc -progressive -o output.jar main.kt, kotlindev
+FSTYPE,SIZE
+" curl -X POST -H ""Content-Type: application/json"" -d '{""key"":""value""}' http://example.com", webdev
+ fail2ban-client status, securitydev
+ python -m pip config set global.index-url http://example.com, pythondev
+ javap -c -s Main, javadev
+ npm config get prefix, jsdev
+ make -j4, cppdev
+ rustup update, rustdev
+ mono -V, csharpdev
+ php -r 'echo phpversion();', phpdev
+ go get github.com/example/repo, golangdev
+ swift build --configuration release, swiftdev
+ gradle build, kotlindev
+ fdisk -l, sysdev
+ curl -s -o /dev/null -w %{http_code} http://example.com, webdev
+ openssl s_client -connect example.com:443 -servername example.com, securitydev
+ python -m pip install --upgrade setuptools, pythondev
+ java -Xmx1024m -jar application.jar, javadev
+ node --version, jsdev
+ g++ -Wall -Wextra -pedantic -o output main.cpp, cppdev
+ cargo doc --open, rustdev
+ mcs -target:exe -define:DEBUG -out:debug.exe main.cs, csharpdev
+ php -i, phpdev
+ go vet, golangdev
+ swift package init, swiftdev
+ kotlinc -include-runtime -o output.jar main.kt, kotlindev
+ nethogs, sysdev
+ curl -u username:password http://example.com, webdev
+ ufw allow 22, securitydev
+ python -m pip install -r requirements.txt, pythondev
+ java -Djava.awt.headless=true -jar application.jar, javadev
+ npm start, jsdev
+ clang -emit-llvm -c -g main.c -o main.bc, cppdev
+ rustc --version, rustdev
+ csc -optimize -out:optimized.exe main.cs, csharpdev
+ php -d display_errors=1 -f /path/to/script.php, phpdev
+ go run main.go, golangdev
+ swift build, swiftdev
+ kotlinc -nowarn -o output.jar main.kt, kotlindev
+ top -b -n 1, sysdev
+ curl -T file.txt ftp://example.com/path/, webdev
+ sudo -u user bash, securitydev
+ python -m pip install --force-reinstall pip, pythondev
+ java -Xms512m -Xmx1024m -jar application.jar, javadev
+ node -p 'process.versions, jsdev
+ gcc -E main.c -o main.preprocessed, cppdev
+ rustup doc, rustdev
+ mono --version, csharpdev
+ php -m, phpdev
+ go env, golangdev
+ swift --version, swiftdev
+ kotlinc -version, kotlindev
+ lsusb -t, sysdev
+" curl -H ""User-Agent: Custom/1.0"" http://example.com", webdev
+ sudo updatedb, securitydev
+ python -m pip install --user package, pythondev
+ java -Dlog4j.configurationFile=/path/to/log4j.xml -jar application.jar, javadev
+ 1000);'," node -e 'console.time(""timer""); setTimeout(() => { console.timeEnd(""timer""); }"
+ make clean, cppdev
+ cargo update, rustdev
+ csc -target:library -out:library.dll main.cs, csharpdev
+ php -l -f /path/to/script.php, phpdev
+ go doc fmt, golangdev
+ swift build --configuration debug, swiftdev
+ kotlinc -script -episodes -o output.jar main.kt, kotlindev
+ vmstat 1 10, sysdev
+" curl -s -w ""%{time_total}"" http://example.com", webdev
+ sudo apt-get autoremove, securitydev
+ python -m pip install --upgrade pip, pythondev
+ java -Djavax.net.ssl.trustStore=/path/to/truststore.jks -jar application.jar, javadev
+ node -e 'console.log(process.pid);', jsdev
+ g++ -std=c++17 -o output main.cpp, cppdev
+ rustc --version, rustdev
+ csc -target:exe -out:output.exe -define:DEBUG main.cs, csharpdev
+ php -S localhost:8000 -t /path/to/webroot, phpdev
+ go test -cover, golangdev
+ swift build --configuration release, swiftdev
+ kotlinc -nowarn -script main.kts, kotlindev
+ iftop -i eth0, sysdev
+ curl -X DELETE http://example.com/resource, webdev
+ sudo ufw enable, securitydev
+ python -m pip install -e /path/to/package, pythondev
+ java -Djava.security.manager -jar application.jar, javadev
+" node -e 'console.log(require(""os"").hostname());'", jsdev
+ clang -Weverything -c main.c -o main.o, cppdev
+ cargo clean, rustdev
+ mono --aot /path/to/assembly.dll, csharpdev
+" php -r 'var_dump(ini_get(""display_errors""));'", phpdev
+ go get -u all, golangdev
+ swift package clean, swiftdev
+ kotlinc -progressive -script main.kts, kotlindev
+ nload eth0, sysdev
+" curl -X PATCH -H ""Content-Type: application/json"" -d '{""key"":""value""}' http://example.com/resource", webdev
+ sudo apt-get update, securitydev
+ python -m pip install --pre package, pythondev
+ java -Djava.security.policy=/path/to/policy.jar -jar application.jar, javadev
+" node -e 'console.log(require(""process"").platform);'", jsdev
+ g++ -std=c++20 -o output main.cpp, cppdev
+ rustup override add nightly, rustdev
+ csc -optimize -out:optimized.exe main.cs, csharpdev
+ php -r 'echo get_current_user();', phpdev
+ go tool cover -func=cov.out, golangdev
+ swift package resolve, swiftdev
+ kotlinc -nowarn -version, kotlindev
+ vmstat -s, sysdev
+ curl -X HEAD http://example.com, webdev
+ sudo apt-get upgrade -y, securitydev
+ python -m pip install --no-binary :all: package, pythondev
+ java -Djava.awt.headless=true -Djava.awt.headless=true -jar application.jar, javadev
+" node -e 'console.log(require(""process"").env);'", jsdev
+ gcc -std=gnu11 -o output main.c, cppdev
+ rustup component add rustfmt, rustdev
+ csc -target:exe -out:output.exe -define:TRACE main.cs, csharpdev
+" php -r 'echo getcwd() . ""\n"";'", phpdev
+ go tool pprof, golangdev
+ swift build --configuration debug, swiftdev
+ kotlinc -script -episodes -o output.jar main.kt, kotlindev
+ iftop -B -i eth0, sysdev
+ curl -X OPTIONS http://example.com, webdev
+ sudo updatedb, securitydev
+ python -m pip install --user --upgrade package, pythondev
+ java -Djava.security.auth.login.config=/path/to/login.conf -jar application.jar, javadev
+" node -e 'console.log(require(""process"").memoryUsage());'", jsdev
+ clang -O3 -o output main.c, cppdev
+ cargo bench, rustdev
+ mono --profile=prof -a -o output.exe main.cs, csharpdev
+" php -r 'echo realpath(getcwd()) . ""\n"";'", phpdev
+ go get -t github.com/example/repo, golangdev
+ swift test --parallel, swiftdev
+ kotlinc -version, kotlindev
+ nload -t, sysdev
+" curl -X CONNECT -H ""Host: example.com"" -H ""Proxy-Connection: Keep-Alive"" example.com:443", webdev
+ sudo ufw status verbose, securitydev
+ python -m pip install --user --upgrade pip, pythondev
+ java -Djavax.net.debug=ssl -jar application.jar, javadev
+" node -e 'console.log(require(""process"").arch);'", jsdev
+ g++ -std=c++23 -o output main.cpp, cppdev
+ rustup doc nightly, rustdev
+TRACE main.cs, csc -target:exe -out:output.exe -define:DEBUG
+" php -r 'var_dump(date(""Y-m-d H:i:s""));'", phpdev
+ go get -u github.com/example/repo/cmd/..., golangdev
+ swift package update, swiftdev
+ kotlinc -progressive -version, kotlindev
+ vmstat -d, sysdev
+ curl -X TRACE http://example.com, webdev
+ sudo apt-get dist-upgrade -y, securitydev
+ python -m pip install --user package, pythondev
+ java -Djavax.net.ssl.trustStorePassword=password -jar application.jar, javadev
+" node -e 'console.log(require(""process"").argv);'", jsdev
+ gcc -Ofast -o output main.c, cppdev
+ cargo tree, rustdev
+ csc -target:exe -out:output.exe -define:DEBUG main.cs, csharpdev
+" php -r 'echo get_current_user() . ""\n"";'", phpdev
+ go tool cover -func=cov.out, golangdev
+ swift build --configuration release, swiftdev
+ kotlinc -nowarn -version, kotlindev
+ iftop -i eth0 -B, sysdev
+ curl -X OPTIONS http://example.com, webdev
+ sudo ufw allow from any to any port 22, securitydev
+ python -m pip install --user --upgrade package, pythondev
+ java -Djavax.net.ssl.keyStorePassword=password -jar application.jar, javadev
+" node -e 'console.log(require(""process"").env.NODE_ENV);'", jsdev
+ clang -march=native -o output main.c, cppdev
+ rustup override set nightly, rustdev
+ csc -target:exe -out:output.exe -define:TRACE main.cs, csharpdev
+" php -r 'echo get_extension_funcs(""gd"") . ""\n"";'", phpdev
+ go test -c, golangdev
+ swift test --configuration release, swiftdev
+ kotlinc -script -version, kotlindev
+ nload -t -i 1000, sysdev
+ curl -X OPTIONS http://example.com, webdev
+ sudo ufw allow in on eth0 to any port 80, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djavax.net.ssl.trustStoreType=JKS -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions.node);'", jsdev
+ g++ -std=gnu++14 -o output main.cpp, cppdev
+ rustup override add stable, rustdev
+TRACE main.cs, csc -target:exe -out:output.exe -define:DEBUG
+" php -r 'echo realpath(dirname(__FILE__)) . ""\n"";'", phpdev
+ go tool cover -func=cov.out, golangdev
+ swift build --configuration debug, swiftdev
+ kotlinc -include-runtime -version, kotlindev
+ vmstat -m, sysdev
+ curl -X TRACE http://example.com, webdev
+ sudo ufw status numbered, securitydev
+ python -m pip install --user --upgrade pip, pythondev
+ java -Djavax.net.ssl.trustStore=/path/to/truststore.jks -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions.v8);'", jsdev
+ clang -Weverything -Wno-pedantic -o output main.c, cppdev
+ rustup component add rustfmt-preview, rustdev
+ csc -target:exe -out:output.exe -define:DEBUG main.cs, csharpdev
+" php -r 'var_dump(ini_get(""error_reporting""));'", phpdev
+ go test -coverprofile=cov.out, golangdev
+ swift build --configuration release, swiftdev
+ kotlinc -progressive -version, kotlindev
+ nload -t -i 500, sysdev
+ curl -X HEAD http://example.com, webdev
+ sudo ufw allow out on eth0 to any port 53, securitydev
+ python -m pip install --user --upgrade pip, pythondev
+ java -Djava.security.policy=/path/to/policy.policy -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=c++20 -Wall -Wextra -pedantic -o output main.cpp, cppdev
+ rustup component add rust-analyzer, rustdev
+ csc -target:exe -out:output.exe -define:TRACE main.cs, csharpdev
+" php -r 'echo get_include_path() . ""\n"";'", phpdev
+ go get -u github.com/example/repo/..., golangdev
+ swift test --parallel --configuration release, swiftdev
+ kotlinc -nowarn -include-runtime -o output.jar main.kt, kotlindev
+ iftop -i eth0 -t, sysdev
+ curl -X OPTIONS http://example.com, webdev
+ sudo ufw allow in on eth0 to any port 443, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djavax.net.ssl.trustStoreType=JKS -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ gcc -std=gnu11 -O2 -o output main.c, cppdev
+ rustup component add rustfmt-preview, rustdev
+TRACE main.cs, csc -target:exe -out:output.exe -define:DEBUG
+" php -r 'var_dump(ini_get(""max_execution_time""));'", phpdev
+ go get -u all, golangdev
+ swift build --configuration debug, swiftdev
+ kotlinc -include-runtime -version, kotlindev
+ nload -t -i 1000, sysdev
+ curl -X OPTIONS http://example.com, webdev
+ sudo ufw status, securitydev
+ python -m pip install --user --upgrade pip, pythondev
+ java -Djavax.net.ssl.trustStorePassword=password -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=c++17 -Wall -Wextra -o output main.cpp, cppdev
+ rustup component add rustfmt, rustdev
+ csc -target:exe -out:output.exe -define:DEBUG main.cs, csharpdev
+" php -r 'echo getcwd() . ""\n"";'", phpdev
+ go get -u github.com/example/repo, golangdev
+ swift test, swiftdev
+ kotlinc -progressive -include-runtime -o output.jar main.kt, kotlindev
+ vmstat -d, sysdev
+ curl -X HEAD http://example.com, webdev
+ sudo ufw allow from any to any port 80, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djavax.net.ssl.keyStorePassword=password -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ gcc -std=gnu++14 -o output main.cpp, cppdev
+ rustup override set stable, rustdev
+ csc -target:exe -out:output.exe -define:TRACE main.cs, csharpdev
+" php -r 'var_dump(ini_get(""upload_max_filesize""));'", phpdev
+ go test -c, golangdev
+ swift package resolve, swiftdev
+ kotlinc -script -version, kotlindev
+ nload -t -i 500, sysdev
+ curl -X OPTIONS http://example.com, webdev
+ sudo ufw allow in on eth0 to any port 22, securitydev
+ python -m pip install --user --upgrade package, pythondev
+ java -Djavax.net.ssl.trustStoreType=JKS -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=c++20 -Wall -Wextra -pedantic -o output main.cpp, cppdev
+ rustup component add rust-analyzer-preview, rustdev
+TRACE main.cs, csc -target:exe -out:output.exe -define:DEBUG
+" php -r 'echo get_include_path() . ""\n"";'", phpdev
+ go get -u all, golangdev
+ swift build --configuration release, swiftdev
+ kotlinc -include-runtime -version, kotlindev
+ iftop -i eth0 -B, sysdev
+ curl -X HEAD http://example.com, webdev
+ sudo ufw status verbose, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djavax.net.ssl.trustStorePassword=password -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=gnu++14 -O3 -o output main.cpp, cppdev
+ rustup component add rustfmt-preview, rustdev
+ csc -target:exe -out:output.exe -define:DEBUG main.cs, csharpdev
+" php -r 'var_dump(ini_get(""post_max_size""));'", phpdev
+ go test -cover, golangdev
+ swift build --configuration debug, swiftdev
+ kotlinc -progressive -version, kotlindev
+ nload -t -i 1000, sysdev
+ curl -X OPTIONS http://example.com, webdev
+ sudo ufw allow out on eth0 to any port 53, securitydev
+ python -m pip install --user --upgrade package, pythondev
+ java -Djava.security.manager -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=c++17 -Wall -Wextra -o output main.cpp, cppdev
+ rustup component add rust-analyzer, rustdev
+ csc -target:exe -out:output.exe -define:TRACE main.cs, csharpdev
+" php -r 'echo get_extension_funcs(""mysqli"") . ""\n"";'", phpdev
+ go get -u github.com/example/repo, golangdev
+ swift test --parallel, swiftdev
+ kotlinc -include-runtime -version, kotlindev
+ vmstat -s, sysdev
+ curl -X HEAD http://example.com, webdev
+ sudo ufw allow in on eth0 to any port 80, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djava.security.policy=/path/to/policy.policy -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=gnu11 -O2 -o output main.c, cppdev
+ rustup override set nightly, rustdev
+TRACE main.cs, csc -target:exe -out:output.exe -define:DEBUG
+" php -r 'var_dump(ini_get(""memory_limit""));'", phpdev
+ go test -c, golangdev
+ swift build --configuration release, swiftdev
+ kotlinc -script -version, kotlindev
+ nload -t -i 500, sysdev
+ curl -X OPTIONS http://example.com, webdev
+ sudo ufw status numbered, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djavax.net.ssl.trustStore=/path/to/truststore.jks -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=c++20 -Wall -Wextra -pedantic -o output main.cpp, cppdev
+ rustup component add rustfmt-preview, rustdev
+ csc -target:exe -out:output.exe -define:DEBUG main.cs, csharpdev
+" php -r 'echo get_include_path() . ""\n"";'", phpdev
+ go get -u all, golangdev
+ swift test --configuration release, swiftdev
+ kotlinc -progressive -include-runtime -o output.jar main.kt, kotlindev
+ iftop -i eth0 -t, sysdev
+ curl -X HEAD http://example.com, webdev
+ sudo ufw allow in on eth0 to any port 443, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djavax.net.ssl.trustStorePassword=password -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=gnu++14 -O3 -o output main.cpp, cppdev
+ rustup component add rustfmt, rustdev
+ csc -target:exe -out:output.exe -define:TRACE main.cs, csharpdev
+" php -r 'var_dump(ini_get(""max_input_time""));'", phpdev
+ go test -coverprofile=cov.out, golangdev
+ swift build --configuration debug, swiftdev
+ kotlinc -include-runtime -version, kotlindev
+ nload -t -i 1000, sysdev
+ curl -X OPTIONS http://example.com, webdev
+ sudo ufw allow out on eth0 to any port 80, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djava.security.policy=/path/to/policy.policy -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=c++17 -Wall -Wextra -o output main.cpp, cppdev
+ rustup component add rust-analyzer-preview, rustdev
+TRACE main.cs, csc -target:exe -out:output.exe -define:DEBUG
+" php -r 'echo get_extension_funcs(""pdo_mysql"") . ""\n"";'", phpdev
+ go get -u github.com/example/repo/..., golangdev
+ swift test --parallel --configuration release, swiftdev
+ kotlinc -progressive -version, kotlindev
+ vmstat -m, sysdev
+ curl -X HEAD http://example.com, webdev
+ sudo ufw allow from any to any port 443, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djavax.net.ssl.keyStorePassword=password -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=gnu++14 -O3 -o output main.cpp, cppdev
+ rustup component add rustfmt-preview, rustdev
+ csc -target:exe -out:output.exe -define:DEBUG main.cs, csharpdev
+" php -r 'var_dump(ini_get(""display_errors""));'", phpdev
+ go test -c, golangdev
+ swift build --configuration debug, swiftdev
+ kotlinc -include-runtime -version, kotlindev
+ nload -t -i 500, sysdev
+ curl -X OPTIONS http://example.com, webdev
+ sudo ufw allow in on eth0 to any port 22, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djavax.net.ssl.trustStoreType=JKS -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=c++20 -Wall -Wextra -pedantic -o output main.cpp, cppdev
+ rustup component add rust-analyzer, rustdev
+ csc -target:exe -out:output.exe -define:TRACE main.cs, csharpdev
+" php -r 'echo get_extension_funcs(""curl"") . ""\n"";'", phpdev
+ go get -u all, golangdev
+ swift test --configuration release, swiftdev
+ kotlinc -progressive -include-runtime -o output.jar main.kt, kotlindev
+ iftop -i eth0 -B, sysdev
+ curl -X OPTIONS http://example.com, webdev
+ sudo ufw allow out on eth0 to any port 80, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djavax.net.ssl.trustStorePassword=password -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=gnu11 -O2 -o output main.c, cppdev
+ rustup component add rustfmt-preview, rustdev
+TRACE main.cs, csc -target:exe -out:output.exe -define:DEBUG
+" php -r 'var_dump(ini_get(""error_reporting""));'", phpdev
+ go test -cover, golangdev
+ swift build --configuration debug, swiftdev
+ kotlinc -script -version, kotlindev
+ nload -t -i 1000, sysdev
+ curl -X HEAD http://example.com, webdev
+ sudo ufw allow in on eth0 to any port 80, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djava.security.manager -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=c++17 -Wall -Wextra -o output main.cpp, cppdev
+ rustup component add rustfmt, rustdev
+ csc -target:exe -out:output.exe -define:DEBUG main.cs, csharpdev
+" php -r 'var_dump(ini_get(""max_input_time""));'", phpdev
+ go test -c, golangdev
+ swift build --configuration release, swiftdev
+ kotlinc -include-runtime -version, kotlindev
+ vmstat -s, sysdev
+ curl -X OPTIONS http://example.com, webdev
+ sudo ufw allow from any to any port 22, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djava.security.policy=/path/to/policy.policy -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=gnu++14 -O3 -o output main.cpp, cppdev
+ rustup component add rust-analyzer-preview, rustdev
+ csc -target:exe -out:output.exe -define:TRACE main.cs, csharpdev
+" php -r 'echo get_extension_funcs(""soap"") . ""\n"";'", phpdev
+ go get -u github.com/example/repo, golangdev
+ swift test --parallel, swiftdev
+ kotlinc -progressive -version, kotlindev
+ nload -t -i 500, sysdev
+ curl -X HEAD http://example.com, webdev
+ sudo ufw allow out on eth0 to any port 443, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djavax.net.ssl.trustStore=/path/to/truststore.jks -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=c++20 -Wall -Wextra -pedantic -o output main.cpp, cppdev
+ rustup component add rustfmt-preview, rustdev
+TRACE main.cs, csc -target:exe -out:output.exe -define:DEBUG
+" php -r 'var_dump(ini_get(""memory_limit""));'", phpdev
+ go test -coverprofile=cov.out, golangdev
+ swift build --configuration debug, swiftdev
+ kotlinc -include-runtime -version, kotlindev
+ iftop -i eth0 -t, sysdev
+ curl -X OPTIONS http://example.com, webdev
+ sudo ufw allow in on eth0 to any port 443, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djavax.net.ssl.trustStorePassword=password -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=gnu++14 -O3 -o output main.cpp, cppdev
+ rustup component add rustfmt, rustdev
+ csc -target:exe -out:output.exe -define:DEBUG main.cs, csharpdev
+" php -r 'var_dump(ini_get(""post_max_size""));'", phpdev
+ go test -c, golangdev
+ swift build --configuration release, swiftdev
+ kotlinc -progressive -version, kotlindev
+ nload -t -i 1000, sysdev
+ curl -X OPTIONS http://example.com, webdev
+ sudo ufw allow from any to any port 80, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djava.security.policy=/path/to/policy.policy -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=c++17 -Wall -Wextra -o output main.cpp, cppdev
+ rustup component add rust-analyzer-preview, rustdev
+ csc -target:exe -out:output.exe -define:TRACE main.cs, csharpdev
+" php -r 'echo get_extension_funcs(""xml"") . ""\n"";'", phpdev
+ go get -u all, golangdev
+ swift test --parallel --configuration release, swiftdev
+ kotlinc -include-runtime -version, kotlindev
+ vmstat -d, sysdev
+ curl -X HEAD http://example.com, webdev
+ sudo ufw allow out on eth0 to any port 22, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djavax.net.ssl.keyStorePassword=password -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=gnu++14 -O3 -o output main.cpp, cppdev
+ rustup component add rustfmt-preview, rustdev
+TRACE main.cs, csc -target:exe -out:output.exe -define:DEBUG
+" php -r 'var_dump(ini_get(""max_input_time""));'", phpdev
+ go test -cover, golangdev
+ swift build --configuration debug, swiftdev
+ kotlinc -progressive -version, kotlindev
+ nload -t -i 500, sysdev
+ curl -X OPTIONS http://example.com, webdev
+ sudo ufw allow in on eth0 to any port 22, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djava.security.manager -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=c++20 -Wall -Wextra -pedantic -o output main.cpp, cppdev
+ rustup component add rustfmt, rustdev
+ csc -target:exe -out:output.exe -define:DEBUG main.cs, csharpdev
+" php -r 'var_dump(ini_get(""display_errors""));'", phpdev
+ go test -c, golangdev
+ swift build --configuration release, swiftdev
+ kotlinc -include-runtime -version, kotlindev
+ iftop -i eth0 -B, sysdev
+ curl -X HEAD http://example.com, webdev
+ sudo ufw allow from any to any port 443, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djavax.net.ssl.trustStoreType=JKS -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=gnu11 -O2 -o output main.c, cppdev
+ rustup component add rustfmt-preview, rustdev
+ csc -target:exe -out:output.exe -define:TRACE main.cs, csharpdev
+" php -r 'echo get_extension_funcs(""ftp"") . ""\n"";'", phpdev
+ go get -u github.com/example/repo, golangdev
+ swift test --parallel, swiftdev
+ kotlinc -progressive -include-runtime -o output.jar main.kt, kotlindev
+ nload -t -i 1000, sysdev
+ curl -X OPTIONS http://example.com, webdev
+ sudo ufw allow out on eth0 to any port 80, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djava.security.policy=/path/to/policy.policy -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=c++17 -Wall -Wextra -o output main.cpp, cppdev
+ rustup component add rustfmt, rustdev
+TRACE main.cs, csc -target:exe -out:output.exe -define:DEBUG
+" php -r 'var_dump(ini_get(""error_reporting""));'", phpdev
+ go test -cover, golangdev
+ swift build --configuration debug, swiftdev
+ kotlinc -include-runtime -version, kotlindev
+ vmstat -s, sysdev
+ curl -X HEAD http://example.com, webdev
+ sudo ufw allow in on eth0 to any port 80, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djavax.net.ssl.trustStorePassword=password -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=gnu++14 -O3 -o output main.cpp, cppdev
+ rustup component add rustfmt-preview, rustdev
+ csc -target:exe -out:output.exe -define:DEBUG main.cs, csharpdev
+" php -r 'var_dump(ini_get(""max_input_time""));'", phpdev
+ go test -c, golangdev
+ swift build --configuration release, swiftdev
+ kotlinc -progressive -version, kotlindev
+ nload -t -i 500, sysdev
+ curl -X OPTIONS http://example.com, webdev
+ sudo ufw allow from any to any port 80, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djava.security.manager -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=c++20 -Wall -Wextra -pedantic -o output main.cpp, cppdev
+ rustup component add rustfmt, rustdev
+ csc -target:exe -out:output.exe -define:TRACE main.cs, csharpdev
+" php -r 'echo get_extension_funcs(""openssl"") . ""\n"";'", phpdev
+ go get -u all, golangdev
+ swift test --parallel --configuration release, swiftdev
+ kotlinc -include-runtime -version, kotlindev
+ iftop -i eth0 -t, sysdev
+ curl -X HEAD http://example.com, webdev
+ sudo ufw allow out on eth0 to any port 443, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djavax.net.ssl.trustStoreType=JKS -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=gnu11 -O2 -o output main.c, cppdev
+ rustup component add rustfmt-preview, rustdev
+TRACE main.cs, csc -target:exe -out:output.exe -define:DEBUG
+" php -r 'var_dump(ini_get(""post_max_size""));'", phpdev
+ go test -coverprofile=cov.out, golangdev
+ swift build --configuration debug, swiftdev
+ kotlinc -progressive -version, kotlindev
+ nload -t -i 1000, sysdev
+ curl -X OPTIONS http://example.com, webdev
+ sudo ufw allow in on eth0 to any port 443, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djavax.net.ssl.trustStore=/path/to/truststore.jks -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=c++17 -Wall -Wextra -o output main.cpp, cppdev
+ rustup component add rustfmt, rustdev
+ csc -target:exe -out:output.exe -define:DEBUG main.cs, csharpdev
+" php -r 'var_dump(ini_get(""memory_limit""));'", phpdev
+ go test -c, golangdev
+ swift build --configuration release, swiftdev
+ kotlinc -include-runtime -version, kotlindev
+ vmstat -s, sysdev
+ curl -X HEAD http://example.com, webdev
+ sudo ufw allow from any to any port 22, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djava.security.policy=/path/to/policy.policy -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=gnu++14 -O3 -o output main.cpp, cppdev
+ rustup component add rustfmt-preview, rustdev
+ csc -target:exe -out:output.exe -define:TRACE main.cs, csharpdev
+" php -r 'echo get_extension_funcs(""zip"") . ""\n"";'", phpdev
+ go get -u github.com/example/repo, golangdev
+ swift test --parallel, swiftdev
+ kotlinc -progressive -include-runtime -o output.jar main.kt, kotlindev
+ nload -t -i 500, sysdev
+ curl -X OPTIONS http://example.com, webdev
+ sudo ufw allow in on eth0 to any port 80, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djavax.net.ssl.trustStorePassword=password -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=c++20 -Wall -Wextra -pedantic -o output main.cpp, cppdev
+ rustup component add rustfmt, rustdev
+TRACE main.cs, csc -target:exe -out:output.exe -define:DEBUG
+" php -r 'var_dump(ini_get(""max_input_time""));'", phpdev
+ go test -cover, golangdev
+ swift build --configuration debug, swiftdev
+ kotlinc -include-runtime -version, kotlindev
+ iftop -i eth0 -B, sysdev
+ curl -X HEAD http://example.com, webdev
+ sudo ufw allow out on eth0 to any port 80, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djava.security.manager -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=gnu++14 -O3 -o output main.cpp, cppdev
+ rustup component add rustfmt-preview, rustdev
+ csc -target:exe -out:output.exe -define:DEBUG main.cs, csharpdev
+" php -r 'var_dump(ini_get(""error_reporting""));'", phpdev
+ go test -c, golangdev
+ swift build --configuration release, swiftdev
+ kotlinc -progressive -version, kotlindev
+ nload -t -i 1000, sysdev
+ curl -X OPTIONS http://example.com, webdev
+ sudo ufw allow from any to any port 443, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djavax.net.ssl.trustStoreType=JKS -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=c++17 -Wall -Wextra -o output main.cpp, cppdev
+ rustup component add rustfmt, rustdev
+ csc -target:exe -out:output.exe -define:TRACE main.cs, csharpdev
+" php -r 'echo get_extension_funcs(""oci8"") . ""\n"";'", phpdev
+ go get -u all, golangdev
+ swift test --parallel --configuration release, swiftdev
+ kotlinc -include-runtime -version, kotlindev
+ vmstat -m, sysdev
+ curl -X HEAD http://example.com, webdev
+ sudo ufw allow in on eth0 to any port 443, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djavax.net.ssl.trustStore=/path/to/truststore.jks -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=gnu11 -O2 -o output main.c, cppdev
+ rustup component add rustfmt-preview, rustdev
+TRACE main.cs, csc -target:exe -out:output.exe -define:DEBUG
+" php -r 'var_dump(ini_get(""display_errors""));'", phpdev
+ go test -coverprofile=cov.out, golangdev
+ swift build --configuration debug, swiftdev
+ kotlinc -progressive -version, kotlindev
+ nload -t -i 500, sysdev
+ curl -X OPTIONS http://example.com, webdev
+ sudo ufw allow from any to any port 80, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djava.security.policy=/path/to/policy.policy -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=c++20 -Wall -Wextra -pedantic -o output main.cpp, cppdev
+ rustup component add rustfmt, rustdev
+ csc -target:exe -out:output.exe -define:DEBUG main.cs, csharpdev
+" php -r 'var_dump(ini_get(""max_input_time""));'", phpdev
+ go test -c, golangdev
+ swift build --configuration release, swiftdev
+ kotlinc -include-runtime -version, kotlindev
+ iftop -i eth0 -t, sysdev
+ curl -X HEAD http://example.com, webdev
+ sudo ufw allow out on eth0 to any port 443, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djavax.net.ssl.trustStoreType=JKS -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=gnu++14 -O3 -o output main.cpp, cppdev
+ rustup component add rustfmt-preview, rustdev
+ csc -target:exe -out:output.exe -define:TRACE main.cs, csharpdev
+" php -r 'echo get_extension_funcs(""exif"") . ""\n"";'", phpdev
+ go get -u github.com/example/repo, golangdev
+ swift test --parallel, swiftdev
+ kotlinc -progressive -include-runtime -o output.jar main.kt, kotlindev
+ nload -t -i 1000, sysdev
+ curl -X OPTIONS http://example.com, webdev
+ sudo ufw allow in on eth0 to any port 80, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djava.security.manager -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=c++17 -Wall -Wextra -o output main.cpp, cppdev
+ rustup component add rustfmt, rustdev
+TRACE main.cs, csc -target:exe -out:output.exe -define:DEBUG
+" php -r 'var_dump(ini_get(""post_max_size""));'", phpdev
+ go test -cover, golangdev
+ swift build --configuration debug, swiftdev
+ kotlinc -include-runtime -version, kotlindev
+ vmstat -s, sysdev
+ curl -X HEAD http://example.com, webdev
+ sudo ufw allow from any to any port 443, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djavax.net.ssl.trustStorePassword=password -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=gnu11 -O2 -o output main.c, cppdev
+ rustup component add rustfmt-preview, rustdev
+ csc -target:exe -out:output.exe -define:DEBUG main.cs, csharpdev
+" php -r 'var_dump(ini_get(""memory_limit""));'", phpdev
+ go test -c, golangdev
+ swift build --configuration release, swiftdev
+ kotlinc -progressive -version, kotlindev
+ nload -t -i 500, sysdev
+ curl -X OPTIONS http://example.com, webdev
+ sudo ufw allow in on eth0 to any port 22, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djava.security.policy=/path/to/policy.policy -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=c++20 -Wall -Wextra -pedantic -o output main.cpp, cppdev
+ rustup component add rustfmt, rustdev
+ csc -target:exe -out:output.exe -define:TRACE main.cs, csharpdev
+" php -r 'echo get_extension_funcs(""gd"") . ""\n"";'", phpdev
+ go get -u all, golangdev
+ swift test --parallel --configuration release, swiftdev
+ kotlinc -include-runtime -version, kotlindev
+ iftop -i eth0 -B, sysdev
+ curl -X HEAD http://example.com, webdev
+ sudo ufw allow from any to any port 80, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djavax.net.ssl.trustStoreType=JKS -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=gnu++14 -O3 -o output main.cpp, cppdev
+ rustup component add rustfmt-preview, rustdev
+TRACE main.cs, csc -target:exe -out:output.exe -define:DEBUG
+" php -r 'var_dump(ini_get(""error_reporting""));'", phpdev
+ go test -coverprofile=cov.out, golangdev
+ swift build --configuration debug, swiftdev
+ kotlinc -progressive -version, kotlindev
+ nload -t -i 1000, sysdev
+ curl -X OPTIONS http://example.com, webdev
+ sudo ufw allow out on eth0 to any port 80, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djava.security.manager -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=c++17 -Wall -Wextra -o output main.cpp, cppdev
+ rustup component add rustfmt, rustdev
+ csc -target:exe -out:output.exe -define:DEBUG main.cs, csharpdev
+" php -r 'var_dump(ini_get(""max_input_time""));'", phpdev
+ go test -c, golangdev
+ swift build --configuration release, swiftdev
+ kotlinc -include-runtime -version, kotlindev
+ vmstat -s, sysdev
+ curl -X HEAD http://example.com, webdev
+ sudo ufw allow in on eth0 to any port 80, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djavax.net.ssl.trustStore=/path/to/truststore.jks -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=gnu11 -O2 -o output main.c, cppdev
+ rustup component add rustfmt-preview, rustdev
+ csc -target:exe -out:output.exe -define:TRACE main.cs, csharpdev
+" php -r 'echo get_extension_funcs(""intl"") . ""\n"";'", phpdev
+ go get -u github.com/example/repo, golangdev
+ swift test --parallel, swiftdev
+ kotlinc -progressive -include-runtime -o output.jar main.kt, kotlindev
+ nload -t -i 500, sysdev
+ curl -X OPTIONS http://example.com, webdev
+ sudo ufw allow from any to any port 443, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djava.security.policy=/path/to/policy.policy -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=c++20 -Wall -Wextra -pedantic -o output main.cpp, cppdev
+ rustup component add rustfmt, rustdev
+TRACE main.cs, csc -target:exe -out:output.exe -define:DEBUG
+" php -r 'var_dump(ini_get(""display_errors""));'", phpdev
+ go test -cover, golangdev
+ swift build --configuration debug, swiftdev
+ kotlinc -include-runtime -version, kotlindev
+ iftop -i eth0 -t, sysdev
+ curl -X HEAD http://example.com, webdev
+ sudo ufw allow out on eth0 to any port 443, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djavax.net.ssl.trustStoreType=JKS -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=gnu++14 -O3 -o output main.cpp, cppdev
+ rustup component add rustfmt-preview, rustdev
+ csc -target:exe -out:output.exe -define:DEBUG main.cs, csharpdev
+" php -r 'var_dump(ini_get(""max_input_time""));'", phpdev
+ go test -c, golangdev
+ swift build --configuration release, swiftdev
+ kotlinc -progressive -version, kotlindev
+ nload -t -i 1000, sysdev
+ curl -X OPTIONS http://example.com, webdev
+ sudo ufw allow in on eth0 to any port 80, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djava.security.manager -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=c++17 -Wall -Wextra -o output main.cpp, cppdev
+ rustup component add rustfmt, rustdev
+ csc -target:exe -out:output.exe -define:TRACE main.cs, csharpdev
+" php -r 'var_dump(ini_get(""post_max_size""));'", phpdev
+ go test -coverprofile=cov.out, golangdev
+ swift build --configuration debug, swiftdev
+ kotlinc -include-runtime -version, kotlindev
+ vmstat -s, sysdev
+ curl -X HEAD http://example.com, webdev
+ sudo ufw allow from any to any port 22, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djavax.net.ssl.trustStore=/path/to/truststore.jks -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=gnu11 -O2 -o output main.c, cppdev
+ rustup component add rustfmt-preview, rustdev
+TRACE main.cs, csc -target:exe -out:output.exe -define:DEBUG
+" php -r 'var_dump(ini_get(""error_reporting""));'", phpdev
+ go test -c, golangdev
+ swift build --configuration release, swiftdev
+ kotlinc -progressive -version, kotlindev
+ nload -t -i 500, sysdev
+ curl -X OPTIONS http://example.com, webdev
+ sudo ufw allow in on eth0 to any port 443, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djava.security.policy=/path/to/policy.policy -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=c++20 -Wall -Wextra -pedantic -o output main.cpp, cppdev
+ rustup component add rustfmt, rustdev
+ csc -target:exe -out:output.exe -define:DEBUG main.cs, csharpdev
+" php -r 'var_dump(ini_get(""max_input_time""));'", phpdev
+ go test -cover, golangdev
+ swift build --configuration debug, swiftdev
+ kotlinc -include-runtime -version, kotlindev
+ iftop -i eth0 -B, sysdev
+ curl -X HEAD http://example.com, webdev
+ sudo ufw allow from any to any port 80, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djavax.net.ssl.trustStoreType=JKS -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=gnu++14 -O3 -o output main.cpp, cppdev
+ rustup component add rustfmt-preview, rustdev
+ csc -target:exe -out:output.exe -define:TRACE main.cs, csharpdev
+" php -r 'var_dump(ini_get(""display_errors""));'", phpdev
+ go test -c, golangdev
+ swift build --configuration release, swiftdev
+ kotlinc -progressive -version, kotlindev
+ nload -t -i 1000, sysdev
+ curl -X OPTIONS http://example.com, webdev
+ sudo ufw allow out on eth0 to any port 80, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djava.security.manager -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=c++17 -Wall -Wextra -o output main.cpp, cppdev
+ rustup component add rustfmt, rustdev
+TRACE main.cs, csc -target:exe -out:output.exe -define:DEBUG
+" php -r 'var_dump(ini_get(""memory_limit""));'", phpdev
+ go test -coverprofile=cov.out, golangdev
+ swift build --configuration debug, swiftdev
+ kotlinc -include-runtime -version, kotlindev
+ vmstat -s, sysdev
+ curl -X HEAD http://example.com, webdev
+ sudo ufw allow in on eth0 to any port 443, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djavax.net.ssl.trustStore=/path/to/truststore.jks -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=gnu11 -O2 -o output main.c, cppdev
+ rustup component add rustfmt-preview, rustdev
+ csc -target:exe -out:output.exe -define:DEBUG main.cs, csharpdev
+" php -r 'var_dump(ini_get(""max_input_time""));'", phpdev
+ go test -c, golangdev
+ swift build --configuration release, swiftdev
+ kotlinc -progressive -version, kotlindev
+ nload -t -i 500, sysdev
+ curl -X OPTIONS http://example.com, webdev
+ sudo ufw allow from any to any port 22, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djava.security.policy=/path/to/policy.policy -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=c++20 -Wall -Wextra -pedantic -o output main.cpp, cppdev
+ rustup component add rustfmt, rustdev
+ csc -target:exe -out:output.exe -define:TRACE main.cs, csharpdev
+" php -r 'echo get_extension_funcs(""oci8"") . ""\n"";'", phpdev
+ go get -u all, golangdev
+ swift test --parallel --configuration release, swiftdev
+ kotlinc -include-runtime -version, kotlindev
+ iftop -i eth0 -t, sysdev
+ curl -X HEAD http://example.com, webdev
+ sudo ufw allow out on eth0 to any port 443, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djavax.net.ssl.trustStoreType=JKS -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=gnu++14 -O3 -o output main.cpp, cppdev
+ rustup component add rustfmt-preview, rustdev
+TRACE main.cs, csc -target:exe -out:output.exe -define:DEBUG
+" php -r 'var_dump(ini_get(""post_max_size""));'", phpdev
+ go test -cover, golangdev
+ swift build --configuration debug, swiftdev
+ kotlinc -progressive -version, kotlindev
+ nload -t -i 1000, sysdev
+ curl -X OPTIONS http://example.com, webdev
+ sudo ufw allow in on eth0 to any port 80, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djava.security.manager -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=c++17 -Wall -Wextra -o output main.cpp, cppdev
+ rustup component add rustfmt, rustdev
+ csc -target:exe -out:output.exe -define:DEBUG main.cs, csharpdev
+" php -r 'var_dump(ini_get(""max_input_time""));'", phpdev
+ go test -c, golangdev
+ swift build --configuration release, swiftdev
+ kotlinc -include-runtime -version, kotlindev
+ vmstat -s, sysdev
+ curl -X HEAD http://example.com, webdev
+ sudo ufw allow from any to any port 443, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djavax.net.ssl.trustStore=/path/to/truststore.jks -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=gnu11 -O2 -o output main.c, cppdev
+ rustup component add rustfmt-preview, rustdev
+ csc -target:exe -out:output.exe -define:TRACE main.cs, csharpdev
+" php -r 'var_dump(ini_get(""display_errors""));'", phpdev
+ go test -coverprofile=cov.out, golangdev
+ swift build --configuration debug, swiftdev
+ kotlinc -progressive -version, kotlindev
+ nload -t -i 500, sysdev
+ curl -X OPTIONS http://example.com, webdev
+ sudo ufw allow in on eth0 to any port 80, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djava.security.policy=/path/to/policy.policy -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=c++20 -Wall -Wextra -pedantic -o output main.cpp, cppdev
+ rustup component add rustfmt, rustdev
+TRACE main.cs, csc -target:exe -out:output.exe -define:DEBUG
+" php -r 'var_dump(ini_get(""error_reporting""));'", phpdev
+ go test -c, golangdev
+ swift build --configuration release, swiftdev
+ kotlinc -include-runtime -version, kotlindev
+ iftop -i eth0 -B, sysdev
+ curl -X HEAD http://example.com, webdev
+ sudo ufw allow from any to any port 22, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djavax.net.ssl.trustStoreType=JKS -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=gnu++14 -O3 -o output main.cpp, cppdev
+ rustup component add rustfmt-preview, rustdev
+ csc -target:exe -out:output.exe -define:DEBUG main.cs, csharpdev
+" php -r 'var_dump(ini_get(""max_input_time""));'", phpdev
+ go test -cover, golangdev
+ swift build --configuration debug, swiftdev
+ kotlinc -progressive -version, kotlindev
+ nload -t -i 1000, sysdev
+ curl -X OPTIONS http://example.com, webdev
+ sudo ufw allow in on eth0 to any port 443, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djava.security.manager -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=c++17 -Wall -Wextra -o output main.cpp, cppdev
+ rustup component add rustfmt, rustdev
+ csc -target:exe -out:output.exe -define:TRACE main.cs, csharpdev
+" php -r 'var_dump(ini_get(""display_errors""));'", phpdev
+ go test -c, golangdev
+ swift build --configuration release, swiftdev
+ kotlinc -include-runtime -version, kotlindev
+ vmstat -s, sysdev
+ curl -X HEAD http://example.com, webdev
+ sudo ufw allow from any to any port 80, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djavax.net.ssl.trustStore=/path/to/truststore.jks -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=gnu11 -O2 -o output main.c, cppdev
+ rustup component add rustfmt-preview, rustdev
+TRACE main.cs, csc -target:exe -out:output.exe -define:DEBUG
+" php -r 'var_dump(ini_get(""max_input_time""));'", phpdev
+ go test -coverprofile=cov.out, golangdev
+ swift build --configuration debug, swiftdev
+ kotlinc -progressive -version, kotlindev
+ nload -t -i 500, sysdev
+ curl -X OPTIONS http://example.com, webdev
+ sudo ufw allow out on eth0 to any port 80, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djava.security.policy=/path/to/policy.policy -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=c++20 -Wall -Wextra -pedantic -o output main.cpp, cppdev
+ rustup component add rustfmt, rustdev
+ csc -target:exe -out:output.exe -define:DEBUG main.cs, csharpdev
+" php -r 'var_dump(ini_get(""post_max_size""));'", phpdev
+ go test -c, golangdev
+ swift build --configuration release, swiftdev
+ kotlinc -include-runtime -version, kotlindev
+ iftop -i eth0 -t, sysdev
+ curl -X HEAD http://example.com, webdev
+ sudo ufw allow in on eth0 to any port 80, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djavax.net.ssl.trustStoreType=JKS -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=gnu++14 -O3 -o output main.cpp, cppdev
+ rustup component add rustfmt-preview, rustdev
+ csc -target:exe -out:output.exe -define:TRACE main.cs, csharpdev
+" php -r 'var_dump(ini_get(""error_reporting""));'", phpdev
+ go test -cover, golangdev
+ swift build --configuration debug, swiftdev
+ kotlinc -progressive -version, kotlindev
+ nload -t -i 1000, sysdev
+ curl -X OPTIONS http://example.com, webdev
+ sudo ufw allow from any to any port 443, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djava.security.manager -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=c++17 -Wall -Wextra -o output main.cpp, cppdev
+ rustup component add rustfmt, rustdev
+TRACE main.cs, csc -target:exe -out:output.exe -define:DEBUG
+" php -r 'var_dump(ini_get(""display_errors""));'", phpdev
+ go test -c, golangdev
+ swift build --configuration release, swiftdev
+ kotlinc -include-runtime -version, kotlindev
+ vmstat -s, sysdev
+ curl -X HEAD http://example.com, webdev
+ sudo ufw allow in on eth0 to any port 80, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djavax.net.ssl.trustStore=/path/to/truststore.jks -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=gnu11 -O2 -o output main.c, cppdev
+ rustup component add rustfmt-preview, rustdev
+ csc -target:exe -out:output.exe -define:DEBUG main.cs, csharpdev
+" php -r 'var_dump(ini_get(""max_input_time""));'", phpdev
+ go test -coverprofile=cov.out, golangdev
+ swift build --configuration debug, swiftdev
+ kotlinc -progressive -version, kotlindev
+ nload -t -i 500, sysdev
+ curl -X OPTIONS http://example.com, webdev
+ sudo ufw allow from any to any port 22, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djava.security.policy=/path/to/policy.policy -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=c++20 -Wall -Wextra -pedantic -o output main.cpp, cppdev
+ rustup component add rustfmt, rustdev
+ csc -target:exe -out:output.exe -define:TRACE main.cs, csharpdev
+" php -r 'var_dump(ini_get(""memory_limit""));'", phpdev
+ go test -c, golangdev
+ swift build --configuration release, swiftdev
+ kotlinc -include-runtime -version, kotlindev
+ iftop -i eth0 -B, sysdev
+ curl -X HEAD http://example.com, webdev
+ sudo ufw allow out on eth0 to any port 443, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djavax.net.ssl.trustStoreType=JKS -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=gnu++14 -O3 -o output main.cpp, cppdev
+ rustup component add rustfmt-preview, rustdev
+TRACE main.cs, csc -target:exe -out:output.exe -define:DEBUG
+" php -r 'var_dump(ini_get(""post_max_size""));'", phpdev
+ go test -cover, golangdev
+ swift build --configuration debug, swiftdev
+ kotlinc -progressive -version, kotlindev
+ nload -t -i 1000, sysdev
+ curl -X OPTIONS http://example.com, webdev
+ sudo ufw allow in on eth0 to any port 80, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djava.security.manager -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=c++17 -Wall -Wextra -o output main.cpp, cppdev
+ rustup component add rustfmt, rustdev
+ csc -target:exe -out:output.exe -define:DEBUG main.cs, csharpdev
+" php -r 'var_dump(ini_get(""display_errors""));'", phpdev
+ go test -c, golangdev
+ swift build --configuration release, swiftdev
+ kotlinc -include-runtime -version, kotlindev
+ vmstat -s, sysdev
+ curl -X HEAD http://example.com, webdev
+ sudo ufw allow from any to any port 443, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djavax.net.ssl.trustStore=/path/to/truststore.jks -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=gnu11 -O2 -o output main.c, cppdev
+ rustup component add rustfmt-preview, rustdev
+ csc -target:exe -out:output.exe -define:TRACE main.cs, csharpdev
+" php -r 'var_dump(ini_get(""max_input_time""));'", phpdev
+ go test -coverprofile=cov.out, golangdev
+ swift build --configuration debug, swiftdev
+ kotlinc -progressive -version, kotlindev
+ nload -t -i 500, sysdev
+ curl -X OPTIONS http://example.com, webdev
+ sudo ufw allow in on eth0 to any port 443, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djava.security.policy=/path/to/policy.policy -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=c++20 -Wall -Wextra -pedantic -o output main.cpp, cppdev
+ rustup component add rustfmt, rustdev
+TRACE main.cs, csc -target:exe -out:output.exe -define:DEBUG
+" php -r 'var_dump(ini_get(""error_reporting""));'", phpdev
+ go test -c, golangdev
+ swift build --configuration release, swiftdev
+ kotlinc -include-runtime -version, kotlindev
+ iftop -i eth0 -t, sysdev
+ curl -X HEAD http://example.com, webdev
+ sudo ufw allow from any to any port 80, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djavax.net.ssl.trustStoreType=JKS -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=gnu++14 -O3 -o output main.cpp, cppdev
+ rustup component add rustfmt-preview, rustdev
+ csc -target:exe -out:output.exe -define:DEBUG main.cs, csharpdev
+" php -r 'var_dump(ini_get(""display_errors""));'", phpdev
+ go test -cover, golangdev
+ swift build --configuration debug, swiftdev
+ kotlinc -progressive -version, kotlindev
+ nload -t -i 1000, sysdev
+ curl -X OPTIONS http://example.com, webdev
+ sudo ufw allow in on eth0 to any port 80, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djava.security.manager -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=c++17 -Wall -Wextra -o output main.cpp, cppdev
+ rustup component add rustfmt, rustdev
+ csc -target:exe -out:output.exe -define:TRACE main.cs, csharpdev
+" php -r 'var_dump(ini_get(""max_input_time""));'", phpdev
+ go test -c, golangdev
+ swift build --configuration release, swiftdev
+ kotlinc -include-runtime -version, kotlindev
+ vmstat -s, sysdev
+ curl -X HEAD http://example.com, webdev
+ sudo ufw allow from any to any port 443, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djavax.net.ssl.trustStore=/path/to/truststore.jks -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=gnu11 -O2 -o output main.c, cppdev
+ rustup component add rustfmt-preview, rustdev
+TRACE main.cs, csc -target:exe -out:output.exe -define:DEBUG
+" php -r 'var_dump(ini_get(""max_input_time""));'", phpdev
+ go test -coverprofile=cov.out, golangdev
+ swift build --configuration debug, swiftdev
+ kotlinc -progressive -version, kotlindev
+ nload -t -i 500, sysdev
+ curl -X OPTIONS http://example.com, webdev
+ sudo ufw allow out on eth0 to any port 80, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djava.security.policy=/path/to/policy.policy -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=c++20 -Wall -Wextra -pedantic -o output main.cpp, cppdev
+ rustup component add rustfmt, rustdev
+ csc -target:exe -out:output.exe -define:DEBUG main.cs, csharpdev
+" php -r 'var_dump(ini_get(""post_max_size""));'", phpdev
+ go test -c, golangdev
+ swift build --configuration release, swiftdev
+ kotlinc -include-runtime -version, kotlindev
+ iftop -i eth0 -B, sysdev
+ curl -X HEAD http://example.com, webdev
+ sudo ufw allow in on eth0 to any port 443, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djavax.net.ssl.trustStoreType=JKS -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=gnu++14 -O3 -o output main.cpp, cppdev
+ rustup component add rustfmt-preview, rustdev
+TRACE main.cs, csc -target:exe -out:output.exe -define:DEBUG
+" php -r 'var_dump(ini_get(""error_reporting""));'", phpdev
+ go test -cover, golangdev
+ swift build --configuration debug, swiftdev
+ kotlinc -progressive -version, kotlindev
+ nload -t -i 1000, sysdev
+ curl -X OPTIONS http://example.com, webdev
+ sudo ufw allow from any to any port 80, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djava.security.manager -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=c++17 -Wall -Wextra -o output main.cpp, cppdev
+ rustup component add rustfmt, rustdev
+ csc -target:exe -out:output.exe -define:DEBUG main.cs, csharpdev
+" php -r 'var_dump(ini_get(""max_input_time""));'", phpdev
+ go test -c, golangdev
+ swift build --configuration release, swiftdev
+ kotlinc -include-runtime -version, kotlindev
+ vmstat -s, sysdev
+ curl -X HEAD http://example.com, webdev
+ sudo ufw allow in on eth0 to any port 80, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djavax.net.ssl.trustStore=/path/to/truststore.jks -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=gnu11 -O2 -o output main.c, cppdev
+ rustup component add rustfmt-preview, rustdev
+ csc -target:exe -out:output.exe -define:TRACE main.cs, csharpdev
+" php -r 'var_dump(ini_get(""max_input_time""));'", phpdev
+ go test -coverprofile=cov.out, golangdev
+ swift build --configuration debug, swiftdev
+ kotlinc -progressive -version, kotlindev
+ nload -t -i 500, sysdev
+ curl -X OPTIONS http://example.com, webdev
+ sudo ufw allow from any to any port 443, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djava.security.policy=/path/to/policy.policy -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=c++20 -Wall -Wextra -pedantic -o output main.cpp, cppdev
+ rustup component add rustfmt, rustdev
+TRACE main.cs, csc -target:exe -out:output.exe -define:DEBUG
+" php -r 'var_dump(ini_get(""display_errors""));'", phpdev
+ go test -c, golangdev
+ swift build --configuration release, swiftdev
+ kotlinc -include-runtime -version, kotlindev
+ iftop -i eth0 -t, sysdev
+ curl -X HEAD http://example.com, webdev
+ sudo ufw allow out on eth0 to any port 80, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djavax.net.ssl.trustStoreType=JKS -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=gnu++14 -O3 -o output main.cpp, cppdev
+ rustup component add rustfmt-preview, rustdev
+ csc -target:exe -out:output.exe -define:DEBUG main.cs, csharpdev
+" php -r 'var_dump(ini_get(""max_input_time""));'", phpdev
+ go test -cover, golangdev
+ swift build --configuration debug, swiftdev
+ kotlinc -progressive -version, kotlindev
+ nload -t -i 1000, sysdev
+ curl -X OPTIONS http://example.com, webdev
+ sudo ufw allow in on eth0 to any port 443, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djava.security.manager -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=c++17 -Wall -Wextra -o output main.cpp, cppdev
+ rustup component add rustfmt, rustdev
+ csc -target:exe -out:output.exe -define:TRACE main.cs, csharpdev
+" php -r 'var_dump(ini_get(""post_max_size""));'", phpdev
+ go test -c, golangdev
+ swift build --configuration release, swiftdev
+ kotlinc -include-runtime -version, kotlindev
+ vmstat -s, sysdev
+ curl -X HEAD http://example.com, webdev
+ sudo ufw allow from any to any port 80, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djavax.net.ssl.trustStore=/path/to/truststore.jks -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=gnu11 -O2 -o output main.c, cppdev
+ rustup component add rustfmt-preview, rustdev
+TRACE main.cs, csc -target:exe -out:output.exe -define:DEBUG
+" php -r 'var_dump(ini_get(""max_input_time""));'", phpdev
+ go test -coverprofile=cov.out, golangdev
+ swift build --configuration debug, swiftdev
+ kotlinc -progressive -version, kotlindev
+ nload -t -i 500, sysdev
+ curl -X OPTIONS http://example.com, webdev
+ sudo ufw allow in on eth0 to any port 80, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djava.security.policy=/path/to/policy.policy -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=c++20 -Wall -Wextra -pedantic -o output main.cpp, cppdev
+ rustup component add rustfmt, rustdev
+ csc -target:exe -out:output.exe -define:DEBUG main.cs, csharpdev
+" php -r 'var_dump(ini_get(""display_errors""));'", phpdev
+ go test -c, golangdev
+ swift build --configuration release, swiftdev
+ kotlinc -include-runtime -version, kotlindev
+ iftop -i eth0 -B, sysdev
+ curl -X HEAD http://example.com, webdev
+ sudo ufw allow from any to any port 443, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djavax.net.ssl.trustStoreType=JKS -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=gnu++14 -O3 -o output main.cpp, cppdev
+ rustup component add rustfmt-preview, rustdev
+ csc -target:exe -out:output.exe -define:TRACE main.cs, csharpdev
+" php -r 'var_dump(ini_get(""max_input_time""));'", phpdev
+ go test -cover, golangdev
+ swift build --configuration debug, swiftdev
+ kotlinc -progressive -version, kotlindev
+ nload -t -i 1000, sysdev
+ curl -X OPTIONS http://example.com, webdev
+ sudo ufw allow out on eth0 to any port 80, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djava.security.manager -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=c++17 -Wall -Wextra -o output main.cpp, cppdev
+ rustup component add rustfmt, rustdev
+TRACE main.cs, csc -target:exe -out:output.exe -define:DEBUG
+" php -r 'var_dump(ini_get(""post_max_size""));'", phpdev
+ go test -c, golangdev
+ swift build --configuration release, swiftdev
+ kotlinc -include-runtime -version, kotlindev
+ vmstat -s, sysdev
+ curl -X HEAD http://example.com, webdev
+ sudo ufw allow in on eth0 to any port 443, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djavax.net.ssl.trustStore=/path/to/truststore.jks -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=gnu11 -O2 -o output main.c, cppdev
+ rustup component add rustfmt-preview, rustdev
+ csc -target:exe -out:output.exe -define:DEBUG main.cs, csharpdev
+" php -r 'var_dump(ini_get(""max_input_time""));'", phpdev
+ go test -coverprofile=cov.out, golangdev
+ swift build --configuration debug, swiftdev
+ kotlinc -progressive -version, kotlindev
+ nload -t -i 500, sysdev
+ curl -X OPTIONS http://example.com, webdev
+ sudo ufw allow from any to any port 80, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djava.security.policy=/path/to/policy.policy -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=c++20 -Wall -Wextra -pedantic -o output main.cpp, cppdev
+ rustup component add rustfmt, rustdev
+ csc -target:exe -out:output.exe -define:TRACE main.cs, csharpdev
+" php -r 'var_dump(ini_get(""display_errors""));'", phpdev
+ go test -c, golangdev
+ swift build --configuration release, swiftdev
+ kotlinc -include-runtime -version, kotlindev
+ iftop -i eth0 -t, sysdev
+ curl -X HEAD http://example.com, webdev
+ sudo ufw allow in on eth0 to any port 80, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djavax.net.ssl.trustStoreType=JKS -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=gnu++14 -O3 -o output main.cpp, cppdev
+ rustup component add rustfmt-preview, rustdev
+TRACE main.cs, csc -target:exe -out:output.exe -define:DEBUG
+" php -r 'var_dump(ini_get(""max_input_time""));'", phpdev
+ go test -cover, golangdev
+ swift build --configuration debug, swiftdev
+ kotlinc -progressive -version, kotlindev
+ nload -t -i 1000, sysdev
+ curl -X OPTIONS http://example.com, webdev
+ sudo ufw allow out on eth0 to any port 443, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djava.security.manager -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=c++17 -Wall -Wextra -o output main.cpp, cppdev
+ rustup component add rustfmt, rustdev
+ csc -target:exe -out:output.exe -define:DEBUG main.cs, csharpdev
+" php -r 'var_dump(ini_get(""post_max_size""));'", phpdev
+ go test -c, golangdev
+ swift build --configuration release, swiftdev
+ kotlinc -include-runtime -version, kotlindev
+ vmstat -s, sysdev
+ curl -X HEAD http://example.com, webdev
+ sudo ufw allow in on eth0 to any port 443, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djavax.net.ssl.trustStore=/path/to/truststore.jks -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=gnu11 -O2 -o output main.c, cppdev
+ rustup component add rustfmt-preview, rustdev
+TRACE main.cs, csc -target:exe -out:output.exe -define:DEBUG
+" php -r 'var_dump(ini_get(""max_input_time""));'", phpdev
+ go test -coverprofile=cov.out, golangdev
+ swift build --configuration debug, swiftdev
+ kotlinc -progressive -version, kotlindev
+ nload -t -i 500, sysdev
+ curl -X OPTIONS http://example.com, webdev
+ sudo ufw allow from any to any port 80, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djava.security.policy=/path/to/policy.policy -jar application.jar, javadev
+" node -e 'console.log(require(""process"").versions);'", jsdev
+ g++ -std=c++20 -Wall -Wextra -pedantic -o output main.cpp, cppdev
+ rustup component add rustfmt, rustdev
+ csc -target:exe -out:output.exe -define:TRACE main.cs, csharpdev
+" php -r 'var_dump(ini_get(""display_errors""));'", phpdev
+ go test -c, golangdev
+ swift build --configuration release, swiftdev
+ kotlinc -include-runtime -version, kotlindev
+ iftop -i eth0 -B, sysdev
+ curl -X HEAD http://example.com, webdev
+ sudo ufw allow in on eth0 to any port 80, securitydev
+ python -m pip install --user --force-reinstall pip, pythondev
+ java -Djavax.net.ssl.trustStoreType=JKS -jar application,
