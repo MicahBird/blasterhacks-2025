@@ -9,7 +9,7 @@ import (
 	"strings"
 )
 
-func parse(line []string, inputCount int) int {
+func parse(line []string, inputCount int, coolDown int) int {
 
 	for i, s := range line {
 		line[i] = strings.TrimSpace(s)
@@ -30,12 +30,14 @@ func parse(line []string, inputCount int) int {
 				return 0
 			}
 		}
+		return inputCount
 	case "pwd":
 		getwd, err := os.Getwd()
 		if err != nil {
 			return 0
 		}
 		println(getwd)
+		return inputCount
 	case "exit":
 		err := os.Remove(socketPath)
 		if err != nil {
@@ -59,9 +61,11 @@ func parse(line []string, inputCount int) int {
 		for _, entry := range dir {
 			println(entry.Name())
 		}
+		return inputCount
 	case "clear":
 		screen.Clear()
 		screen.MoveTopLeft()
+		return inputCount
 	case "send_sock":
 		var sendLine string
 
@@ -74,6 +78,7 @@ func parse(line []string, inputCount int) int {
 
 		sendLine = strings.TrimSpace(sendLine)
 		wsock(sendLine)
+		return inputCount
 
 		// traps for regular shells and unwanted programs
 	case "bash":
@@ -84,6 +89,7 @@ func parse(line []string, inputCount int) int {
 		fallthrough
 	case "fish":
 		fmt.Println("External shell programs are disallowed")
+		return inputCount
 		// --
 
 	default:
@@ -92,15 +98,15 @@ func parse(line []string, inputCount int) int {
 		cmd.Stderr = os.Stderr
 		cmd.Stdin = os.Stdin
 		// Play ad:
-		if inputCount > 5 {
+		if inputCount-coolDown == 0 {
 			play_ad(PROGRAMMER)
 		}
-
 		cmd.Run()
 
 	}
 
-	return 0
+	return inputCount + 1
+
 }
 
 func splitLine(line string) []string {

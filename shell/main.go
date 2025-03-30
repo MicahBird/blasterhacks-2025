@@ -23,6 +23,9 @@ func main() {
 		<-c
 	}()
 
+	inputCount := 0
+	var coolDown = 5
+
 	sockRead := make(chan []byte, 3)
 	go func() {
 		for {
@@ -30,26 +33,23 @@ func main() {
 			if readData != nil {
 				sockRead <- readData
 				fmt.Println("\n" + string(<-sockRead))
-				prompt()
+				prompt(inputCount, coolDown)
 			}
 		}
 	}()
 
-	inputCount := 0
-
 	for {
-		prompt()
+		prompt(inputCount, coolDown)
 		line := scanner()
 		lines := splitLine(line)
-		inputCount += 1
-		parse(lines, inputCount)
+		inputCount = parse(lines, inputCount, coolDown)
 		if inputCount > 5 {
 			inputCount = 0
 		}
 	}
 }
 
-func prompt() {
+func prompt(inputCount int, coolDown int) {
 	getwd, err := os.Getwd()
 	if err != nil {
 		return
@@ -69,11 +69,14 @@ func prompt() {
 		return
 	}
 
+	remaningCommands := coolDown - inputCount
 	if strings.Contains(getwd, homedir) {
 		getwd = strings.Replace(getwd, homedir, "", 1)
-		fmt.Print(style.Render(fmt.Sprintf("[%s@%s:~%s]$ ", current.Name, hostname, getwd)))
+		fmt.Print(style.Render(fmt.Sprintf(`╭─[%s@%s:~%s]
+╰──────────── (%d Commands Remaning)$ `, current.Name, hostname, getwd, remaningCommands)))
 	} else {
-		fmt.Print(style.Render(fmt.Sprintf("[%s@%s:%s]$ ", current.Name, hostname, getwd)))
+		fmt.Print(style.Render(fmt.Sprintf(`╭─[%s@%s:~%s]
+╰─ (%d Commands Remaning)$ `, current.Name, hostname, getwd, remaningCommands)))
 	}
 }
 
