@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bytes"
 	"fmt"
 	"github.com/google/shlex"
 	"github.com/inancgumus/screen"
@@ -105,7 +106,7 @@ func parse(line []string, inputCount int, coolDown int, tagChan chan []byte) int
 		// Play ad:
 		if coolDown-inputCount == 1 {
 			wsock(fullLine)
-			tags := string(<-tagChan)
+			tags := strings.TrimSpace(string(bytes.Trim(<-tagChan, "\x00")))
 			play_ad(tags)
 			fmt.Println(tags)
 
